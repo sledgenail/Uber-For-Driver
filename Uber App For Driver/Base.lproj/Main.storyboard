@@ -1,26 +1,145 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Uber_App_For_Driver" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uzZ-gY-pcM">
+                                <rect key="frame" x="100" y="227.33333333333331" width="214" height="29.999999999999943"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-t4-TIp">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="29.999999999999972"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="logInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i17-gv-xFg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rae-jc-mjo">
+                                        <rect key="frame" x="107" y="0.0" width="107" height="29.999999999999972"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cig-Hy-9k6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2iw-ha-y4O">
+                                <rect key="frame" x="40" y="127.33333333333334" width="334" height="30.000000000000028"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drivers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK7-QW-or5">
+                                <rect key="frame" x="176" y="80" width="62.333333333333343" height="27.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70039302147239269" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KwP-f1-Lv8">
+                                <rect key="frame" x="40" y="177.33333333333334" width="334" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2iw-ha-y4O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="1m6-Bz-r2S"/>
+                            <constraint firstItem="KwP-f1-Lv8" firstAttribute="top" secondItem="2iw-ha-y4O" secondAttribute="bottom" constant="20" id="6w0-oT-56R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uzZ-gY-pcM" secondAttribute="trailing" constant="80" id="AdU-8P-bZ7"/>
+                            <constraint firstItem="KwP-f1-Lv8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="BRM-ga-Z9r"/>
+                            <constraint firstItem="WK7-QW-or5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="IMC-Ib-Gzz"/>
+                            <constraint firstItem="uzZ-gY-pcM" firstAttribute="top" secondItem="KwP-f1-Lv8" secondAttribute="bottom" constant="20" id="Tzf-bo-tWa"/>
+                            <constraint firstItem="uzZ-gY-pcM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="Xny-nO-3AD"/>
+                            <constraint firstAttribute="trailing" secondItem="2iw-ha-y4O" secondAttribute="trailing" constant="40" id="gRn-nh-sKh"/>
+                            <constraint firstAttribute="trailing" secondItem="KwP-f1-Lv8" secondAttribute="trailing" constant="40" id="kp8-AG-nTq"/>
+                            <constraint firstItem="2iw-ha-y4O" firstAttribute="top" secondItem="WK7-QW-or5" secondAttribute="bottom" constant="20" id="m8y-yW-DhU"/>
+                            <constraint firstItem="WK7-QW-or5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vZf-O7-c9a"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="2iw-ha-y4O" id="4HJ-HD-n6h"/>
+                        <outlet property="passwordTextField" destination="KwP-f1-Lv8" id="zk3-v5-mI3"/>
+                        <segue destination="iSl-aa-Usw" kind="show" identifier="DriverVC" id="I0V-68-6B5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="42" y="139"/>
+        </scene>
+        <!--DriverVC-->
+        <scene sceneID="0MB-WQ-lHC">
+            <objects>
+                <viewController id="iSl-aa-Usw" customClass="DriverVC" customModule="Uber_App_For_Driver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fbp-Ch-cvS"/>
+                        <viewControllerLayoutGuide type="bottom" id="cyg-bK-aaM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5II-9l-Gpr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzO-Ln-hAT">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Driver" id="Knr-Hz-e3M">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="SB0-qa-nVB">
+                                            <connections>
+                                                <action selector="logoutBtnPressed:" destination="iSl-aa-Usw" id="DUD-tW-ZR7"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jnX-Tb-vQc">
+                                <rect key="frame" x="0.0" y="64" width="414" height="452"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frR-h4-PkL">
+                                <rect key="frame" x="164.66666666666666" y="556" width="85" height="30"/>
+                                <state key="normal" title="Cancel Uber"/>
+                                <connections>
+                                    <action selector="acceptUberBtnPressed:" destination="iSl-aa-Usw" eventType="touchUpInside" id="bSN-g7-uWQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jnX-Tb-vQc" secondAttribute="trailing" id="1ZL-gp-iHR"/>
+                            <constraint firstItem="jnX-Tb-vQc" firstAttribute="top" secondItem="xzO-Ln-hAT" secondAttribute="bottom" id="Jhy-Dk-O5u"/>
+                            <constraint firstAttribute="trailing" secondItem="xzO-Ln-hAT" secondAttribute="trailing" id="SJ2-Al-iRV"/>
+                            <constraint firstItem="jnX-Tb-vQc" firstAttribute="leading" secondItem="5II-9l-Gpr" secondAttribute="leading" id="STy-MP-Tfp"/>
+                            <constraint firstItem="xzO-Ln-hAT" firstAttribute="top" secondItem="Fbp-Ch-cvS" secondAttribute="bottom" id="Wsi-74-KY1"/>
+                            <constraint firstItem="xzO-Ln-hAT" firstAttribute="leading" secondItem="5II-9l-Gpr" secondAttribute="leading" id="Ykc-ZZ-ph8"/>
+                            <constraint firstItem="frR-h4-PkL" firstAttribute="centerX" secondItem="5II-9l-Gpr" secondAttribute="centerX" id="ZbK-OY-Bnd"/>
+                            <constraint firstItem="frR-h4-PkL" firstAttribute="top" secondItem="jnX-Tb-vQc" secondAttribute="bottom" constant="40" id="aRs-qv-KWx"/>
+                            <constraint firstItem="cyg-bK-aaM" firstAttribute="top" secondItem="frR-h4-PkL" secondAttribute="bottom" constant="150" id="eQ9-iU-LoI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="jnX-Tb-vQc" id="75k-3B-hJy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVq-Ka-9mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.20000000000005" y="138.0809595202399"/>
         </scene>
     </scenes>
 </document>
