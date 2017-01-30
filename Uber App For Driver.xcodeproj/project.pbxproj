@@ -14,6 +14,7 @@
 		A0AEE67D1E3B86B0000725E1 /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE67C1E3B86B0000725E1 /* DriverVC.swift */; };
 		A0AEE6841E3BA45D000725E1 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE6831E3BA45D000725E1 /* DBProvider.swift */; };
 		A0AEE6861E3BA478000725E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE6851E3BA478000725E1 /* Constants.swift */; };
+		A0AEE68A1E3BFA4C000725E1 /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE6891E3BFA4C000725E1 /* UberHandler.swift */; };
 		A0E66E891E37174C0069F24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E66E881E37174C0069F24B /* AppDelegate.swift */; };
 		A0E66E8E1E37174C0069F24B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E66E8C1E37174C0069F24B /* Main.storyboard */; };
 		A0E66E901E37174C0069F24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E66E8F1E37174C0069F24B /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		A0AEE67C1E3B86B0000725E1 /* DriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
 		A0AEE6831E3BA45D000725E1 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		A0AEE6851E3BA478000725E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0AEE6891E3BFA4C000725E1 /* UberHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
 		A0E66E851E37174C0069F24B /* Uber App For Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber App For Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E66E881E37174C0069F24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E66E8D1E37174C0069F24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				A07563401E3A533300735D81 /* AuthProvider.swift */,
 				A0AEE6831E3BA45D000725E1 /* DBProvider.swift */,
 				A0AEE6851E3BA478000725E1 /* Constants.swift */,
+				A0AEE6891E3BFA4C000725E1 /* UberHandler.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				A09563C81E397DF10091E614 /* SignInVC.swift in Sources */,
 				A0AEE67D1E3B86B0000725E1 /* DriverVC.swift in Sources */,
 				A0AEE6841E3BA45D000725E1 /* DBProvider.swift in Sources */,
+				A0AEE68A1E3BFA4C000725E1 /* UberHandler.swift in Sources */,
 				A0E66E891E37174C0069F24B /* AppDelegate.swift in Sources */,
 				A0AEE6861E3BA478000725E1 /* Constants.swift in Sources */,
 			);

@@ -26,8 +26,15 @@ class DBProvider {
     }
     
     //Request Reference
+    var requestRef: FIRDatabaseReference {
+        return dbRef.child(Constants.UBER_REQUEST)
+    }
     
     //Request Accepted
+    var requestAcceptedRef: FIRDatabaseReference {
+        return dbRef.child(Constants.UBER_ACCEPTED)
+    }
+    
     
     func saveUser(withID: String,  email: String, password: String) {
         
